@@ -12,8 +12,8 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
 }
 
 /* Colors */
@@ -31,12 +31,27 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  font-family: 'Poppins', sans-serif;
+body 
+{
+  font-family: 'Montserrat', sans-serif !important;
   color: var(--color-default);
+
 }
 
+#main
+{
+margin: 0;
+}
+h1
+{
+font-size: 90px !important;
+}
 
+h2
+{
+font-size: 78px ;
+color: #FEBF00;
+}
 /* MEDIA QUERIES */
 .builtNextGen{
   margin-top:-150px;
@@ -76,7 +91,12 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+.kichwa
+{
+  font-size: 30px !important;
+}
 section {
+
   padding: 40px 0;
   overflow: hidden;
 }
@@ -87,7 +107,7 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 0px;
+  padding-bottom: 100px;
 }
 
 .section-header h2 {
@@ -265,61 +285,10 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.topbar {
-  background:  #221B00;
-  height: 100px;
-  font-size: 14px;
-  transition: all 0.5s;
-  color: #fff;
-  padding: 0;
-}
-
-.topbar .contact-info i {
-  font-style: normal;
-  color: #fff;
-  line-height: 0;
-}
-
-.topbar .contact-info i a,
-.topbar .contact-info i span {
-  padding-left: 5px;
-  color: #fff;
-}
-
-@media (max-width: 575px) {
-
-  .topbar .contact-info i a,
-  .topbar .contact-info i span {
-    font-size: 13px;
-  }
-}
-
-.topbar .contact-info i a {
-  line-height: 0;
-  transition: 0.3s;
-}
-
-.topbar .contact-info i a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.topbar .social-links a {
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 0;
-  transition: 0.3s;
-  margin-left: 20px;
-}
-
-.topbar .social-links a:hover {
-  color: #fff;
-}
-
 .header {
-  transition: all 0.5s;
-  z-index: 997;
   height: 100px;
   background-color:  #221B00;
+
 }
 
 .header.sticked {
@@ -332,17 +301,13 @@ section {
 }
 
 .header .logo img {
-  max-height: 500px;
   margin-right: 6px;
+  height: 90px;"
 }
 
-.header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  color: #fff;
-  font-family: var(--font-primary);
+.header .h1 {
+  height: 90px;"
+  
 }
 
 .header .logo h1 span {
@@ -363,7 +328,7 @@ section {
 @media (min-width: 1280px) {
   .navbar {
     height: 100px;
-    padding: 0;
+    padding-top: 30px;
   }
 
   .navbar ul {
@@ -400,9 +365,10 @@ section {
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 36px;
     line-height: 0;
     margin-left: 5px;
+
   }
 
   .navbar>ul>li>a:before {
@@ -454,14 +420,14 @@ section {
 
   .navbar .dropdown ul a {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 24px;
     text-transform: none;
     font-weight: 600;
     color: #b58803;
   }
 
   .navbar .dropdown ul a i {
-    font-size: 12px;
+    font-size: 36px;
   }
 
   .navbar .dropdown ul a:hover,
@@ -550,7 +516,7 @@ section {
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 24px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -635,11 +601,36 @@ section {
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
+.about
+{
+  margin-top: 30px !important;
+}
 .about h3 {
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
   font-family: var(--font-secondary);
+}
+
+.para3
+{
+  color: black;
+  font-size: 36px;
+  font-weight: light;
+
+}
+
+.para4
+
+{
+  font-size: 70px;
+ color: #000;
+ text-align: left;
+}
+
+.picture1
+{
+  height: 500px;
 }
 
 .about .call-us {
@@ -1618,6 +1609,23 @@ section {
   color: #fff;
 }
 
+#features
+{
+  background-color: #F8EDCB;
+}
+.feature1
+{
+  color: rgb(0, 0, 0);
+  font-size: 78px;
+}
+
+.feature2
+{
+  color: black;
+  font-size: 36px;
+  font-weight: light;
+}
+
 .pricing .featured {
   z-index: 10;
   border: 3px solid var(--color-primary);
@@ -1763,6 +1771,38 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+#contact
+{
+  padding-top: 100px;
+}
+.para5
+
+{
+  text-align: center; 
+  color: black;
+  font-size: 70px !important;
+  font-weight: normal !important;
+
+}
+.ccontact1
+
+{
+  color: green;
+}
+.input-group
+
+{
+  align-items: center;
+   padding-left: 200px; 
+   padding-right: 200px;
+}
+.btn
+{
+  border-color: #000000;
+  background-color: black; 
+  align-content: center;
+   color: #FEBF00;"
+}
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;
@@ -1931,11 +1971,21 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#hero 
+{
+background-color: #221B00;
+height: 700px;
+}
+
+.hero1
+{
+  padding-top: 130px;
+}
 .hero {
   width: 100%;
   height: 100vh ;
   position: relative;
-  background: #221B00;
+  background-color: #221B00 !important;
   padding: 60px 0 0 0;
   background-image: url('./assets/img/hero.png');
 }
@@ -1946,10 +1996,32 @@ section {
   }
 }
 
-.hero h1 {
-  font-size:60px;
+.para
+{
+color: rgb(255, 255, 255) ;
+text-align: center;
+}
+
+.para1
+{
+color: #FEBF00;
+}
+
+.hero .h1 {
   font-weight: bold;
   color: #ffff;
+  text-align: center; 
+  font-size: 20px;
+}
+
+.para2
+{
+  color: rgb(255, 255, 255) !important;
+  font-size: 36px !important;
+  text-align: center ;
+  font-weight: light;
+
+
 }
 
 .hero p {
@@ -2620,6 +2692,36 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+#footer
+{
+  background-color: #221B00 !important;
+}
+
+
+.para6
+{
+  color: rgb(255, 255, 255) !important;
+  font-size: 30px !important;
+  font-weight: lighter;
+}
+
+.para7
+{
+  font-size: 24px; 
+  text-align: right;
+   margin-top: -50px;
+   align-items: left;
+}
+.para8
+{
+  height: 5px;
+  color: #fdcb00;
+}
+
+.para9
+{
+  height: 100px;
+}
 .footer {
   font-size: 14px;
   background-color: #221B00;
@@ -2678,6 +2780,7 @@ section {
 
 .footer .footer-links {
   margin-bottom: 30px;
+  padding-top: 100px;
 }
 
 .footer .footer-links ul {
@@ -2686,6 +2789,12 @@ section {
   margin: 0;
 }
 
+.footericon
+{
+  color: white;
+   align-items: center;
+    padding-right: 10px;
+}
 .footer .footer-links ul i {
   padding-right: 2px;
   color: rgba(0, 131, 116, 0.8);
