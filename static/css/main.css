@@ -1824,8 +1824,28 @@ section {
 #contact
 {
   padding-top: 100px;
+ text-align: center !important;
 }
 
+.border-rad{
+
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+
+  color: #fff;
+  background-color: #f9a826;
+  border-color: #f9a826;
+}
+
+
+
+
+.border-rad:hover{
+ 
+   background-color: #f9a826;
+  border-color: #f9a826;
+
+}
 .para5
 
 {
@@ -1834,21 +1854,6 @@ section {
   font-weight: light;
 }
 
-
-@media (min-width: 1365px) {
-  .para5 {
-    
-  padding-left: 10vw;
-}
-
-
-@media (max-width: 640px) {
-  .para5 {
-    padding-left: 5vw;
-
-
-  }
-  }
 
 
 
