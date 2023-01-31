@@ -612,7 +612,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-
 # About Us Section
 --------------------------------------------------------------*/
 .about
@@ -628,42 +627,28 @@ section {
 
 .para3
 {
-  color: rgb(0, 0, 0);
-  font-size: 3vw !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 36px !important;
   font-weight: light;
 }
 @media (min-width: 1365px) {
   .para3 {
     text-align: left ;
 
-  }
-
-
-@media (max-width: 640px) {
-  .para3 {
-    text-align: center ;
-  }
-  }
-
-
-  
+}
 .para10
 {
   color: rgb(0, 0, 0) !important;
   font-size: 30px !important;
   font-weight: light;
 
-}
-
 .para4
+
 {
-  color: rgb(0, 0, 0) !important;
-  font-size: 3rem;
-  font-weight: light;
-
+  font-size: 70px;
+ color: #000;
+ text-align: left;
 }
-
-
 
 .picture1
 {
@@ -1672,7 +1657,7 @@ section {
 .feature2
 {
   color: black;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: light;
 }
 
@@ -1824,34 +1809,17 @@ section {
 #contact
 {
   padding-top: 100px;
- text-align: center !important;
+  padding-left: 100px;
 }
 
-.border-rad{
-
-  border-top-right-radius: 28px;
-  border-bottom-right-radius: 28px;
-
-  color: #fff;
-  background-color: #f9a826;
-  border-color: #f9a826;
-}
-
-
-
-
-.border-rad:hover{
- 
-   background-color: #f9a826;
-  border-color: #f9a826;
-
-}
 .para5
 
 {
   color: rgb(202, 55, 55) !important;
   font-size: 30px !important;
   font-weight: light;
+  align-content: center !important;
+
 }
 
 
@@ -2797,7 +2765,7 @@ font-size: 90px !important;  }
 .para6
 {
   color: rgb(255, 255, 255) !important;
-  font-size: 25px !important;
+  font-size: 30px !important;
   font-weight: lighter;
 }
 
