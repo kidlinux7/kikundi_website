@@ -628,11 +628,25 @@ section {
 
 .para3
 {
-  color: rgb(0, 0, 0) !important;
-  font-size: 30px !important;
+  color: rgb(0, 0, 0);
+  font-size: 3vw !important;
   font-weight: light;
-
 }
+@media (min-width: 1365px) {
+  .para3 {
+    text-align: left ;
+
+  }
+
+
+@media (max-width: 640px) {
+  .para3 {
+    text-align: center ;
+  }
+  }
+
+
+  
 .para10
 {
   color: rgb(0, 0, 0) !important;
@@ -1810,7 +1824,6 @@ section {
 #contact
 {
   padding-top: 100px;
-  padding-left: 100px;
 }
 
 .para5
@@ -1819,9 +1832,28 @@ section {
   color: rgb(202, 55, 55) !important;
   font-size: 30px !important;
   font-weight: light;
-  align-content: center !important;
-
 }
+
+
+@media (min-width: 1365px) {
+  .para5 {
+    
+  padding-left: 10vw;
+}
+
+
+@media (max-width: 640px) {
+  .para5 {
+    padding-left: 5vw;
+
+
+  }
+  }
+
+
+
+
+
 .ccontact1
 
 {
@@ -2018,7 +2050,7 @@ margin-bottom: 0px;
 
 @media (min-width: 1365px) {
   .hero {
-    height: 5000px !important;
+    height: 5500px !important;
   }
 }
 
@@ -2081,8 +2113,6 @@ font-size: 90px !important;  }
   font-size: 3vw !important;
   text-align: center ;
   font-weight: light;
-
-
 }
 
 .hero p {
