@@ -5,18 +5,19 @@
 <section id="hero">
   <div class="container">
     <div class="row justify-content-between">
-      <div class="col-lg-12  pt-lg-0 order-2 order-lg-1 d-flex align-items-center" >
-        <div class="hero1"  data-aos="zoom-out" >
-          <h1 class="para">Re-imagining <span class="para1"> Financial Health </span>for youths.</h1><br>
+      
+        <div class="hero1" >
+          <h1 class="para">Re-imagining <span class="para1"> Financial Health </span>for Youths.</h1><br>
           <p class="para2">Building friendly digital tools to enable youths to save, invest and build a financial health using saving group methodologies, AI, machine learning, data and 4iR technology.</p>
         </div>
-      </div>
+    
     </div>
   </div>
 
 </section>
-<section id="about" class="about"></section>
-      <div class="container" >
+
+<section id="about" class="about">
+      <div class="container">
         <div class="row justify-content-between">
          <p class="para3">About us</p>
           <p class="para4">We are building youths friendly financial inclusion tools.</p>
@@ -32,17 +33,17 @@
                   <p class="para3"><img src="../static/img/Group210.png"> Real-time notifications</p>                 
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6  d-flex justify-content-center align-items-stretch" data-aos="">
+          <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 d-flex justify-content-center" data-aos="">
              <img class="picture1"   src="../static/img/Untitled-1.png">
           </div>
         </div>
       </div>
-
+ </section>
   <section id="features" class="features">
     <div class="container" >
       <div class="row" data-aos="" >
         <div class="col-lg-6 col-md-4 mt-4">
-         <h2 ><span class="feature1">Our</span> mission</h2>
+         <h2 ><span class="feature1">Our</span> Mission</h2>
         </div>
         <div class="col-lg-6 col-md-4 mt-4">
          <p  class="feature2">To help social entrepreneurs in East Africa to build a good financial health, access more funding to grow their businesses faster.</p>
@@ -80,7 +81,7 @@
             {% csrf_token %}
 
           
-            <div class="input-group col-xxl-12 col-xl-12 col-lg-12 col-md-1 col-sm-12 col-xs-12 col-12">  
+            <div class="input-group">  
             <input   required name="subscriberEmail"  type="email" class="form-control" placeholder="Your business email address" aria-label="Recipient's username" aria-describedby="button-addon2" data-aos="">
             <button class="btn" type="submit" name="subscriberEmailButton" id="button-addon2">Sign up</button>
             </div>
