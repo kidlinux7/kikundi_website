@@ -612,6 +612,7 @@ section {
 }
 
 /*--------------------------------------------------------------
+
 # About Us Section
 --------------------------------------------------------------*/
 .about
@@ -628,18 +629,27 @@ section {
 .para3
 {
   color: rgb(0, 0, 0) !important;
-  font-size: 36px !important;
+  font-size: 30px !important;
+  font-weight: light;
+
+}
+.para10
+{
+  color: rgb(0, 0, 0) !important;
+  font-size: 30px !important;
   font-weight: light;
 
 }
 
 .para4
-
 {
-  font-size: 70px;
- color: #000;
- text-align: left;
+  color: rgb(0, 0, 0) !important;
+  font-size: 3rem;
+  font-weight: light;
+
 }
+
+
 
 .picture1
 {
@@ -1648,7 +1658,7 @@ section {
 .feature2
 {
   color: black;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: light;
 }
 
@@ -1800,14 +1810,16 @@ section {
 #contact
 {
   padding-top: 100px;
+  padding-left: 100px;
 }
+
 .para5
 
 {
-  text-align: center; 
-  color: black;
-  font-size: 70px !important;
-  font-weight: normal !important;
+  color: rgb(202, 55, 55) !important;
+  font-size: 30px !important;
+  font-weight: light;
+  align-content: center !important;
 
 }
 .ccontact1
@@ -2750,7 +2762,7 @@ font-size: 90px !important;  }
 .para6
 {
   color: rgb(255, 255, 255) !important;
-  font-size: 30px !important;
+  font-size: 25px !important;
   font-weight: lighter;
 }
 
