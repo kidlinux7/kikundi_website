@@ -32,7 +32,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--color-default);
 }
 
@@ -650,6 +650,17 @@ section {
   margin-top: 1vw !important;
 }
 
+.para31
+{
+  margin-top: 0vw;
+}
+@media (min-width: 1365px) {
+  .para31 {
+    margin-top: 0 !important;
+
+  }
+  }
+
 .about h3 {
   font-weight: 700;
   font-size: 28px;
@@ -659,21 +670,39 @@ section {
 .para3
 {
   color: rgb(0, 0, 0) !important;
-  font-size: 36px !important;
+  font-size: 36px;
   font-weight: light;
 }
+
 @media (min-width: 1365px) {
   .para3 {
+    font-size: 2.5vw !important;
     text-align: left ;
+    text-justify: auto !important;
+  }
+  }
 
-}
-}
+@media (max-width: 640px) {
+  .para3 {
+    font-size: 25px !important;
+    text-justify: auto;
+  }
+  }
+
 .para4
 {
-font-size: 70px !important;
  color: rgb(0, 0, 0) !important;
  text-align: left !important;
+ font-size: 70px !important;
+
 }
+
+
+@media (max-width: 640px) {
+  .para4 {
+    font-size: 30px !important; 
+  font-weight: 100px; }
+  }
 
 .picture1
 {
@@ -682,7 +711,8 @@ font-size: 70px !important;
 }
 @media (min-width: 1365px) {
   .picture1 {
-    height: 1000px !important;}
+    height: 1000px !important;  
+  }
   }
 
 
@@ -1670,11 +1700,29 @@ font-size: 70px !important;
 {
   background-color: #F8EDCB;
 }
+
+.feature0{
+  font-size: 70px  !important;
+  color:#fdcb00;
+  }
+  @media (max-width: 640px) {
+    .feature0 {
+      font-size: 30px !important; 
+      font-weight: 100px; }
+    }
+
 .feature1
 {
   color: rgb(0, 0, 0);
-  font-size: 78px;
+  font-size: 70px;
+  font-weight: 100px; 
 }
+
+@media (max-width: 640px) {
+  .feature1 {
+    font-size: 30px !important; 
+   font-weight: 100px; }
+  }
 
 .feature2
 {
@@ -1682,6 +1730,21 @@ font-size: 70px !important;
   font-size: 36px;
   font-weight: light;
 }
+
+@media (min-width: 1365px) {
+  .feature2 {
+    font-size: 2.5vw !important;
+    text-align: left ;
+    text-justify: auto !important;
+  }
+  }
+
+@media (max-width: 640px) {
+  .feature2 {
+    font-size: 25px !important;
+    text-justify: auto;
+  }
+  }
 
 .pricing .featured {
   z-index: 10;
@@ -1849,15 +1912,32 @@ font-size: 70px !important;
 
 }
 
+
 .para5
-
 {
-  text-align: center; 
+  text-align: center !important; 
   color: black;
-  font-size: 5vw; 
-  font-weight: 400;
-
+  font-size: 36px;
+  font-weight: light;
 }
+
+@media (min-width: 1365px) {
+  .para5 {
+    text-align: center !important; 
+    font-size: 2.5vw !important;
+    text-align: left ;
+    text-justify: auto !important;
+  }
+  }
+
+@media (max-width: 640px) {
+  .para5{
+    text-align: center !important; 
+    font-size: 25px !important;
+    text-justify: auto;
+  }
+  }
+
 
 .contact .info-container {
   background-color: var(--color-primary);
@@ -2029,11 +2109,46 @@ font-size: 70px !important;
 --------------------------------------------------------------*/
 #hero
 {
-  background-color:#221B00 !important;
+  background-color:#221B00;
+  height: 700px ;
+
 }
+@media (min-width: 1440px) {
+  #hero {
+    height: 700px !important;
+    background-color:#221B00 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 450px !important;
+    background-color:#221B00 !important;
+  }
+  }
+@media (max-width: 450px) {
+  #hero {
+    height: 850px !important;
+    background-color:#221B00 !important;
+  }
+  }
+  @media (max-width: 380px) {
+    #hero {
+      height: 1000px !important;
+      background-color:#221B00 !important;
+    }
+    }
+  
+    @media (max-width: 330px) {
+      #hero {
+        height: 1100px !important;
+        background-color:#221B00 !important;
+      }
+      }
+
 .hero {
   width: 100%;
-  height: 100vh ;
+  height: 100vh;
   position: relative;
   background: #221B00;
   padding: 60px 0 0 0;
@@ -2065,7 +2180,7 @@ font-size: 90px !important;  }
 
 @media (max-width: 640px) {
   .para {
-    font-size: 45px !important;  }
+    font-size: 55px !important;  }
   }
 
 
@@ -2083,10 +2198,28 @@ font-size: 90px !important;  }
 .para2
 {
   color: rgb(255, 255, 255) !important;
-  font-size: 3vw !important;
   text-align: center ;
   font-weight: light;
 }
+
+@media (min-width: 1365px) {
+  .para2 {
+    font-size: 2.5vw !important;}
+  }
+
+
+@media (max-width: 640px) {
+  .para2 {
+    font-size: 30px !important;  }
+  }
+
+
+
+
+
+
+
+
 
 .hero p {
   font-size: 48px;
@@ -2763,12 +2896,28 @@ font-size: 90px !important;  }
   color: white;
 }
 
+
 .para6
 {
   color: rgb(255, 255, 255) !important;
-  font-size: 30px !important;
-  font-weight: lighter;
+  font-size: 36px;
+  font-weight: 100px;
 }
+
+@media (min-width: 1365px) {
+  .para6 {
+    font-size: 2.5vw !important;
+    text-align: left ;
+    text-justify: auto !important;
+  }
+  }
+
+@media (max-width: 640px) {
+  .para6 {
+    font-size: 25px !important;
+    text-justify: auto;
+  }
+  }
 .para7
 {
   font-size: 24px; 
