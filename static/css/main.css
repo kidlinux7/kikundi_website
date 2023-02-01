@@ -12,14 +12,14 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
 }
 
 /* Colors */
 :root {
   --color-default: #ffffff;
-  --color-primary: #000000;
+  --color-primary: #221B00;
   --color-secondary: #FEBF00;
 }
 
@@ -36,6 +36,16 @@ body {
   color: var(--color-default);
 }
 
+h1
+{
+  font-size :6vw;
+}
+
+h2
+{
+font-size: 78px ;
+color: #FEBF00;
+}
 
 /* MEDIA QUERIES */
 .builtNextGen{
@@ -104,8 +114,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
-  left: 0;
+background-color: #221B00;  left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -315,11 +324,12 @@ section {
   color: #fff;
 }
 
-.header {
+#header {
   transition: all 0.5s;
   z-index: 997;
   height: 100px;
-  background-color:  #221B00;
+  background-color:  #221B00 !important;
+
 }
 
 .header.sticked {
@@ -332,7 +342,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 500px;
+  max-height: 500px ;
   margin-right: 6px;
 }
 
@@ -390,7 +400,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-secondary);
-    font-size: 24px;
+    font-size: 30px;
     font-weight: light;
     color: rgba(255, 255, 255, 0.6);
     white-space: nowrap;
@@ -400,7 +410,7 @@ section {
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 30px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -541,7 +551,7 @@ section {
     justify-content: space-between;
     padding: 10px 20px;
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 600;
     color: rgba(255, 255, 255, 100);
     white-space: nowrap;
@@ -573,8 +583,8 @@ section {
 
   .navbar .getstarted:hover,
   .navbar .getstarted:focus:hover {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.8);
+    color: #FEBF00;
+    background: #221B00;
   }
 
   .navbar .dropdown ul,
@@ -584,8 +594,8 @@ section {
     padding: 10px 0;
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
-    background-color: #000000;
-    border: 1px solid #000202;
+    background-color: #221B00;
+    border: 1px solid #221B00;
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -635,13 +645,51 @@ section {
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
+.about
+{
+  margin-top: 1vw !important;
+}
+
 .about h3 {
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
   font-family: var(--font-secondary);
 }
+.para3
+{
+  color: rgb(0, 0, 0) !important;
+  font-size: 36px !important;
+  font-weight: light;
+}
+@media (min-width: 1365px) {
+  .para3 {
+    text-align: left ;
 
+}
+}
+.para4
+{
+font-size: 70px !important;
+ color: rgb(0, 0, 0) !important;
+ text-align: left !important;
+}
+
+.picture1
+{
+  height: 500px;
+  margin-left: 0px;
+}
+@media (min-width: 1365px) {
+  .picture1 {
+    height: 1000px !important;}
+  }
+
+
+@media (max-width: 640px) {
+  .picture1 {
+    font-size: 45px !important;  }
+  }
 .about .call-us {
   left: 10%;
   right: 10%;
@@ -1618,6 +1666,23 @@ section {
   color: #fff;
 }
 
+#features
+{
+  background-color: #F8EDCB;
+}
+.feature1
+{
+  color: rgb(0, 0, 0);
+  font-size: 78px;
+}
+
+.feature2
+{
+  color: black;
+  font-size: 36px;
+  font-weight: light;
+}
+
 .pricing .featured {
   z-index: 10;
   border: 3px solid var(--color-primary);
@@ -1763,6 +1828,37 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+.border-rad{
+
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+
+  color: #FEBF00;
+  background-color: #000000;
+  border-color: #FEBF00;
+}
+
+
+
+
+.border-rad:hover{
+ 
+   background-color: #f9a826;
+  border-color: #f9a826;
+
+}
+
+.para5
+
+{
+  text-align: center; 
+  color: black;
+  font-size: 5vw; 
+  font-weight: 400;
+
+}
+
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;
@@ -1931,6 +2027,10 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#hero
+{
+  background-color:#221B00 !important;
+}
 .hero {
   width: 100%;
   height: 100vh ;
@@ -1940,16 +2040,52 @@ section {
   background-image: url('./assets/img/hero.png');
 }
 
+ .hero1
+ {
+  padding-top: 130px !important; 
+  align-items: center  !important; 
+ }
 @media (min-width: 1365px) {
   .hero {
     background-attachment: fixed;
   }
 }
 
+.para
+{
+  color: #ffffff !important;
+  text-align: center;
+}
+
+@media (min-width: 1365px) {
+  .para {
+font-size: 90px !important;  }
+}
+
+
+@media (max-width: 640px) {
+  .para {
+    font-size: 45px !important;  }
+  }
+
+
+  .para1
+  {
+  color: #FEBF00 !important;
+  }
+
 .hero h1 {
   font-size:60px;
   font-weight: bold;
-  color: #ffff;
+  color: rgb(255, 255, 255);
+}
+
+.para2
+{
+  color: rgb(255, 255, 255) !important;
+  font-size: 3vw !important;
+  text-align: center ;
+  font-weight: light;
 }
 
 .hero p {
@@ -2625,6 +2761,30 @@ section {
   background-color: #221B00;
   padding: 50px 0;
   color: white;
+}
+
+.para6
+{
+  color: rgb(255, 255, 255) !important;
+  font-size: 30px !important;
+  font-weight: lighter;
+}
+.para7
+{
+  font-size: 24px; 
+  text-align: right;
+   margin-top: -50px;
+   align-items: left;
+   color: #fff;
+}
+.para8
+{
+  height: 5px;
+  color: #fdcb00;
+}
+.para9
+{
+  height: 100px;
 }
 
 .footer .footer-info .logo {
