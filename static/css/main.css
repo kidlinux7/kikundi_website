@@ -2900,8 +2900,8 @@ font-size: 90px !important;  }
 .para6
 {
   color: rgb(255, 255, 255) !important;
-  font-size: 26px 
-  font-weight: 50px;
+  font-size: 36px; 
+  font-weight: 100px;
 }
 
 @media (min-width: 1365px) {
