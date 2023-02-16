@@ -221,46 +221,14 @@ background-color: #221B00;  left: 0;
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.6s ease-out;
+  z-index: 100;
+  background-size: 100%;
+  background: rgb(255, 255, 255) url(../img/loader2.gif) no-repeat center;
+  height: 100vh;
+  width: 100%;
 }
+ 
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #fff;
-  border-color: var(--color-primary) transparent var(--color-primary) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1.5s linear infinite;
-  animation: animate-preloader 1.5s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -1894,8 +1862,8 @@ section {
 
 .border-rad{
 
-  border-top-right-radius: 28px;
-  border-bottom-right-radius: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   color: #FEBF00;
   background-color: #000000;
@@ -2900,13 +2868,13 @@ font-size: 90px !important;  }
 .para6
 {
   color: rgb(255, 255, 255) !important;
-  font-size: 36px;
+  font-size: 3px;
   font-weight: 100px;
 }
 
 @media (min-width: 1365px) {
   .para6 {
-    font-size: 2.5vw !important;
+    font-size: 1.5vw !important;
     text-align: left ;
     text-justify: auto !important;
   }
@@ -2914,7 +2882,7 @@ font-size: 90px !important;  }
 
 @media (max-width: 640px) {
   .para6 {
-    font-size: 25px !important;
+    font-size: 2px !important;
     text-justify: auto;
   }
   }

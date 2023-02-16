@@ -1,0 +1,106 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block content %}
+
+
+<section id="hero">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-12  pt-lg-0 order-2 order-lg-1 d-flex align-items-center" >
+        <div class="hero1" data-aos="zoom-out" >
+          <h1 class="para">Privacy <span class="para1" >Financial Health  </span>for Youths.</h1><br>
+          <p class="para2">Building friendly digital tools to enable youths to save, invest and build a financial health using saving group methodologies, AI, machine learning, data and 4iR technology.</p>
+        </div>
+      </div>
+</section>
+
+<main id="main">
+
+    <section id="about" class="about">
+      <div class="container" >
+        <div class="row">
+         <p class ="para3">About Us</p>
+          <h2 class="para4">We are building youths friendly financial inclusion tools.</h2>
+          <div  class="  col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center" data-aos="">
+            <p class="para3">We are determined to provide digital solutions to savings groups member who don't have access to friendly tools to save, borrow, invest, and learn key financial skills. Our users will enjoy a fresh mobile friendly saving group lifestyle with features like; 
+            </p>
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">    
+                  <p class="para3"><img src="../static/img/Group210.png"> Easy group management</p>
+                  <p class="para3"><img src="../static/img/Group210.png"> Instant transfers</p>
+                  <p class="para3"><img src="../static/img/Group210.png"> User cash back rewards</p> 
+                  <p class="para3"><img src="../static/img/Group210.png"> Track your credit score</p>
+                  <p class="para3"><img src="../static/img/Group210.png"> Bank-grade security</p>
+                  <p class="para3"><img src="../static/img/Group210.png"> Real-time notifications</p>                 
+            </div>
+          </div>
+          <div class=" col-xl-6 col-lg-6  d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+             <img class="picture1" src="../static/img/Try01.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KwO4cfAnE2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <section id="features" class="features">
+    <div class="container" >
+      <div class="row" data-aos="" >
+        <div class="col-lg-6 col-md-4 mt-4">
+         <h2 class="feature0" ><span class="feature1">Our</span> Mission</h2>
+        </div>
+        <div class="col-lg-6 col-md-4 mt-4">
+         <p  class="feature2">To help social entrepreneurs in East Africa to build a good financial health, access more funding to grow their businesses faster.</p>
+        </div>
+    </div>
+    <div class="row" data-aos="" >    
+      <div class="col-lg-6 col-md-4 mt-4">
+        <h2 class="feature0" ><span class="feature1">Our</span> Vission</h2>
+      </div>
+      <div class="col-lg-6 col-md-4 mt-4">
+       <p  class="feature2">To be a solution that positively redefines youth's relationship with money and enables them to build wealth using modern technology.</p>
+      </div>
+  </div>
+  </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row align-items-center justify-content-center p-5"
+        style="border-radius: 20px;">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-1 col-sm-12 col-xs-12 col-12">
+          <h3 class="para5" >Join our community and get our latest updates.</h3>  
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+          <form action="" method="POST">
+            {% for message in messages %}
+            <h4 style="color: green;">{{message}}</h4>
+            {% endfor %}
+            {% csrf_token %}  
+            <div class="input-group mb-3 mt-4 ">
+              <input required name="subscriberEmail" type="text" class="form-control" placeholder="Your business email address" aria-label="Recipient's username" aria-describedby="button-addon2" style="height: 70px; font-size: 32px;">
+              <button class="btn  border-rad" type="submit" name="subscriberEmailButton" id="button-addon2" style="font-size: 32px;">Sign Up</button>
+            </div>
+        </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+</main>
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+<script>
+var loader = document.getElementById("preloader");
+ window.addEventListener("load",function(){
+   loader.style.display = "none";
+ })
+
+</script>
+
+
+
+</body>
+
+</html>
+{% endblock %}
