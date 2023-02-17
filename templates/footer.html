@@ -13,9 +13,10 @@
         <div class="col-lg-2 footer-links" style="padding-top: 100px;">
             <ul class="para6">
             <p> <b>Company</b></p>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="/templates/termsandcondition.html">Privacy policy</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'privacypolicy' %}">Privacypolicy</a></li>
+            <li><a href="{% url 'termsandcondition' %}">termsandcondition</a></li>
+
            </ul>
         </div>
 

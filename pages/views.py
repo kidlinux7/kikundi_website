@@ -33,3 +33,13 @@ def home(request):
 
 
     return render(request, 'index.html')
+
+def moses(request):
+    return render(request,'moses.html')
+
+def termsandcondition(request):
+    return render(request,'termsandcondition.html')
+
+def privacypolicy(request):
+    return render(request,'privacypolicy.html')
+
