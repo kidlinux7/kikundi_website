@@ -223,7 +223,7 @@ background-color: #221B00;  left: 0;
   position: fixed;
   z-index: 100;
   background-size: 100%;
-  background: rgb(255, 255, 255) url(../img/loader2.gif) no-repeat center;
+  background: rgb(255, 255, 255) url(../img/loader21.gif) no-repeat center;
   height: 100vh;
   width: 100%;
 }
