@@ -677,11 +677,9 @@ section {
 .picture1
 {
   margin-left: 0px;
+  border-radius: 25px !important;
 }
-@media (min-width: 1365px) {
-  .picture1 {
-  }
-  }
+
 
 
 @media (max-width: 640px) {
@@ -3026,5 +3024,9 @@ font-size: 90px !important;  }
   color: #fff;
 }
 
+#slider2{
 
+  background-color:#221B00 !important;
+  height: 700px ;
+}
 
